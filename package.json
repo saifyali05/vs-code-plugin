@@ -1,0 +1,36 @@
+{
+  "name": "vibe",
+  "displayName": "chatgpt to vscode copy paste automatically",
+  "description": "This is a very useful vs code extension which is defined for windows ,this extension allows user to automatically paste copied code from chatgpt to vs code ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "dependencies": {
+    "ws": "^8.13.0"
+  },
+  "contributes": {
+    "commands": [{
+      "command": "vibe.helloWorld",
+      "title": "Chatgpt to VS code code auto paste"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
